@@ -1,0 +1,355 @@
+
+[0;36mstatritng serial test[0m
+
+
+[0;33mstating test of grid1.txt [0m
+
+[0;34mstarting test of grid1.txt with 100 generations [0m
+[0;31mrunning ./ask2_Serial testfiles/glid1.txt 100 Serialresults1.txt [0m
+RUN 1 Real time : 2.90 seconds
+[0;31mrunning ./ask2_Serial testfiles/glid1.txt 100 Serialresults1.txt [0m
+RUN 2 Real time : 2.96 seconds
+[0;31mrunning ./ask2_Serial testfiles/glid1.txt 100 Serialresults1.txt [0m
+RUN 3 Real time : 2.91 seconds
+[0;31mrunning ./ask2_Serial testfiles/glid1.txt 100 Serialresults1.txt [0m
+RUN 4 Real time : 2.90 seconds
+[0;31mrunning ./ask2_Serial testfiles/glid1.txt 100 Serialresults1.txt [0m
+RUN 5 Real time : 2.95 seconds
+[0;32mAverage SERIAL time of testfiles/glid1.txt and 100 generations: 2.92 seconds [0m
+
+[0;34mstarting test of grid1.txt with 1000 generations [0m
+[0;31mrunning ./ask2_Serial testfiles/glid1.txt 1000 Serialresults1.txt [0m
+RUN 1 Real time : 28.32 seconds
+[0;31mrunning ./ask2_Serial testfiles/glid1.txt 1000 Serialresults1.txt [0m
+RUN 2 Real time : 28.54 seconds
+[0;31mrunning ./ask2_Serial testfiles/glid1.txt 1000 Serialresults1.txt [0m
+RUN 3 Real time : 28.40 seconds
+[0;31mrunning ./ask2_Serial testfiles/glid1.txt 1000 Serialresults1.txt [0m
+RUN 4 Real time : 28.50 seconds
+[0;31mrunning ./ask2_Serial testfiles/glid1.txt 1000 Serialresults1.txt [0m
+RUN 5 Real time : 28.69 seconds
+[0;32mAverage SERIAL time of testfiles/glid1.txt and 1000 generations: 28.49 seconds [0m
+
+
+[0;33mstating test of grid2.txt [0m
+
+[0;34mstarting test of grid2.txt with 100 generations [0m
+[0;31mrunning ./ask2_Serial testfiles/glid2.txt 100 Serialresults2.txt [0m
+RUN 1 Real time : 295.22 seconds
+[0;31mrunning ./ask2_Serial testfiles/glid2.txt 100 Serialresults2.txt [0m
+RUN 2 Real time : 296.73 seconds
+[0;31mrunning ./ask2_Serial testfiles/glid2.txt 100 Serialresults2.txt [0m
+RUN 3 Real time : 296.10 seconds
+[0;31mrunning ./ask2_Serial testfiles/glid2.txt 100 Serialresults2.txt [0m
+RUN 4 Real time : 295.07 seconds
+[0;31mrunning ./ask2_Serial testfiles/glid2.txt 100 Serialresults2.txt [0m
+RUN 5 Real time : 296.68 seconds
+[0;32mAverage SERIAL time of testfiles/glid2.txt and 100 generations: 295.96 seconds [0m
+
+[0;34mstarting test of grid2.txt with 1000 generations [0m
+[0;31mrunning ./ask2_Serial testfiles/glid2.txt 1000 Serialresults2.txt [0m
+RUN 1 Real time : 2888.87 seconds
+[0;31mrunning ./ask2_Serial testfiles/glid2.txt 1000 Serialresults2.txt [0m
+RUN 2 Real time : 2882.62 seconds
+[0;31mrunning ./ask2_Serial testfiles/glid2.txt 1000 Serialresults2.txt [0m
+RUN 3 Real time : 2890.45 seconds
+[0;31mrunning ./ask2_Serial testfiles/glid2.txt 1000 Serialresults2.txt [0m
+RUN 4 Real time : 2882.30 seconds
+[0;31mrunning ./ask2_Serial testfiles/glid2.txt 1000 Serialresults2.txt [0m
+RUN 5 Real time : 2910.89 seconds
+[0;32mAverage SERIAL time of testfiles/glid2.txt and 1000 generations: 2891.02 seconds [0m
+
+
+[0;36mstatritng paraler test[0m
+
+gcc src/ask2.c -o ask2 -g -fopenmp
+
+
+[0;35mstarting test with 1 threads [0m
+
+
+[0;33mstating test of grid1.txt [0m
+
+[0;34mstarting test of grid1.txt with 100 generations [0m
+[0;31mrunning ./ask2 testfiles/glid1.txt 100 result1.txt [0m
+RUN 1 Real time : 2.90 seconds
+[0;31mrunning ./ask2 testfiles/glid1.txt 100 result1.txt [0m
+RUN 2 Real time : 2.92 seconds
+[0;31mrunning ./ask2 testfiles/glid1.txt 100 result1.txt [0m
+RUN 3 Real time : 2.95 seconds
+[0;31mrunning ./ask2 testfiles/glid1.txt 100 result1.txt [0m
+RUN 4 Real time : 2.90 seconds
+[0;31mrunning ./ask2 testfiles/glid1.txt 100 result1.txt [0m
+RUN 5 Real time : 2.91 seconds
+[0;32mAverage time of testfiles/glid1.txt with 100 generations and 1 threads: 2.91 seconds [0m
+
+[0;34mstarting test of grid1.txt with 1000 generations [0m
+[0;31mrunning ./ask2 testfiles/glid1.txt 1000 result1.txt [0m
+RUN 1 Real time : 28.12 seconds
+[0;31mrunning ./ask2 testfiles/glid1.txt 1000 result1.txt [0m
+RUN 2 Real time : 28.79 seconds
+[0;31mrunning ./ask2 testfiles/glid1.txt 1000 result1.txt [0m
+RUN 3 Real time : 28.19 seconds
+[0;31mrunning ./ask2 testfiles/glid1.txt 1000 result1.txt [0m
+RUN 4 Real time : 28.26 seconds
+[0;31mrunning ./ask2 testfiles/glid1.txt 1000 result1.txt [0m
+RUN 5 Real time : 28.85 seconds
+[0;32mAverage time of testfiles/glid1.txt with 1000 generations and 1 threads: 28.44 seconds [0m
+
+
+[0;33mstating test of grid2.txt [0m
+
+[0;34mstarting test of grid2.txt with 100 generations [0m
+[0;31mrunning ./ask2 testfiles/glid2.txt 100 result2.txt [0m
+RUN 1 Real time : 291.58 seconds
+[0;31mrunning ./ask2 testfiles/glid2.txt 100 result2.txt [0m
+RUN 2 Real time : 291.73 seconds
+[0;31mrunning ./ask2 testfiles/glid2.txt 100 result2.txt [0m
+RUN 3 Real time : 295.17 seconds
+[0;31mrunning ./ask2 testfiles/glid2.txt 100 result2.txt [0m
+RUN 4 Real time : 293.86 seconds
+[0;31mrunning ./ask2 testfiles/glid2.txt 100 result2.txt [0m
+RUN 5 Real time : 295.45 seconds
+[0;32mAverage time of testfiles/glid2.txt with 100 generations and 1 threads: 293.55 seconds [0m
+
+[0;34mstarting test of grid2.txt with 1000 generations [0m
+[0;31mrunning ./ask2 testfiles/glid2.txt 1000 result2.txt [0m
+RUN 1 Real time : 2847.09 seconds
+[0;31mrunning ./ask2 testfiles/glid2.txt 1000 result2.txt [0m
+RUN 2 Real time : 2860.35 seconds
+[0;31mrunning ./ask2 testfiles/glid2.txt 1000 result2.txt [0m
+RUN 3 Real time : 2859.14 seconds
+[0;31mrunning ./ask2 testfiles/glid2.txt 1000 result2.txt [0m
+RUN 4 Real time : 2846.89 seconds
+[0;31mrunning ./ask2 testfiles/glid2.txt 1000 result2.txt [0m
+RUN 5 Real time : 2872.58 seconds
+[0;32mAverage time of testfiles/glid2.txt with 1000 generations and 1 threads: 2857.21 seconds [0m
+
+
+
+[0;35mstarting test with 2 threads [0m
+
+
+[0;33mstating test of grid1.txt [0m
+
+[0;34mstarting test of grid1.txt with 100 generations [0m
+[0;31mrunning ./ask2 testfiles/glid1.txt 100 result1.txt [0m
+RUN 1 Real time : 1.55 seconds
+[0;31mrunning ./ask2 testfiles/glid1.txt 100 result1.txt [0m
+RUN 2 Real time : 1.57 seconds
+[0;31mrunning ./ask2 testfiles/glid1.txt 100 result1.txt [0m
+RUN 3 Real time : 1.51 seconds
+[0;31mrunning ./ask2 testfiles/glid1.txt 100 result1.txt [0m
+RUN 4 Real time : 1.51 seconds
+[0;31mrunning ./ask2 testfiles/glid1.txt 100 result1.txt [0m
+RUN 5 Real time : 1.53 seconds
+[0;32mAverage time of testfiles/glid1.txt with 100 generations and 2 threads: 1.53 seconds [0m
+
+[0;34mstarting test of grid1.txt with 1000 generations [0m
+[0;31mrunning ./ask2 testfiles/glid1.txt 1000 result1.txt [0m
+RUN 1 Real time : 14.41 seconds
+[0;31mrunning ./ask2 testfiles/glid1.txt 1000 result1.txt [0m
+RUN 2 Real time : 14.37 seconds
+[0;31mrunning ./ask2 testfiles/glid1.txt 1000 result1.txt [0m
+RUN 3 Real time : 14.26 seconds
+[0;31mrunning ./ask2 testfiles/glid1.txt 1000 result1.txt [0m
+RUN 4 Real time : 14.33 seconds
+[0;31mrunning ./ask2 testfiles/glid1.txt 1000 result1.txt [0m
+RUN 5 Real time : 14.49 seconds
+[0;32mAverage time of testfiles/glid1.txt with 1000 generations and 2 threads: 14.37 seconds [0m
+
+
+[0;33mstating test of grid2.txt [0m
+
+[0;34mstarting test of grid2.txt with 100 generations [0m
+[0;31mrunning ./ask2 testfiles/glid2.txt 100 result2.txt [0m
+RUN 1 Real time : 153.45 seconds
+[0;31mrunning ./ask2 testfiles/glid2.txt 100 result2.txt [0m
+RUN 2 Real time : 152.14 seconds
+[0;31mrunning ./ask2 testfiles/glid2.txt 100 result2.txt [0m
+RUN 3 Real time : 152.33 seconds
+[0;31mrunning ./ask2 testfiles/glid2.txt 100 result2.txt [0m
+RUN 4 Real time : 153.21 seconds
+[0;31mrunning ./ask2 testfiles/glid2.txt 100 result2.txt [0m
+RUN 5 Real time : 152.65 seconds
+[0;32mAverage time of testfiles/glid2.txt with 100 generations and 2 threads: 152.75 seconds [0m
+
+[0;34mstarting test of grid2.txt with 1000 generations [0m
+[0;31mrunning ./ask2 testfiles/glid2.txt 1000 result2.txt [0m
+RUN 1 Real time : 1455.15 seconds
+[0;31mrunning ./ask2 testfiles/glid2.txt 1000 result2.txt [0m
+RUN 2 Real time : 1453.14 seconds
+[0;31mrunning ./ask2 testfiles/glid2.txt 1000 result2.txt [0m
+RUN 3 Real time : 1457.73 seconds
+[0;31mrunning ./ask2 testfiles/glid2.txt 1000 result2.txt [0m
+RUN 4 Real time : 1456.03 seconds
+[0;31mrunning ./ask2 testfiles/glid2.txt 1000 result2.txt [0m
+RUN 5 Real time : 1455.48 seconds
+[0;32mAverage time of testfiles/glid2.txt with 1000 generations and 2 threads: 1455.50 seconds [0m
+
+
+
+[0;35mstarting test with 3 threads [0m
+
+
+[0;33mstating test of grid1.txt [0m
+
+[0;34mstarting test of grid1.txt with 100 generations [0m
+[0;31mrunning ./ask2 testfiles/glid1.txt 100 result1.txt [0m
+RUN 1 Real time : 1.10 seconds
+[0;31mrunning ./ask2 testfiles/glid1.txt 100 result1.txt [0m
+RUN 2 Real time : 1.09 seconds
+[0;31mrunning ./ask2 testfiles/glid1.txt 100 result1.txt [0m
+RUN 3 Real time : 1.08 seconds
+[0;31mrunning ./ask2 testfiles/glid1.txt 100 result1.txt [0m
+RUN 4 Real time : 1.09 seconds
+[0;31mrunning ./ask2 testfiles/glid1.txt 100 result1.txt [0m
+RUN 5 Real time : 1.09 seconds
+[0;32mAverage time of testfiles/glid1.txt with 100 generations and 3 threads: 1.09 seconds [0m
+
+[0;34mstarting test of grid1.txt with 1000 generations [0m
+[0;31mrunning ./ask2 testfiles/glid1.txt 1000 result1.txt [0m
+RUN 1 Real time : 9.79 seconds
+[0;31mrunning ./ask2 testfiles/glid1.txt 1000 result1.txt [0m
+RUN 2 Real time : 9.82 seconds
+[0;31mrunning ./ask2 testfiles/glid1.txt 1000 result1.txt [0m
+RUN 3 Real time : 9.76 seconds
+[0;31mrunning ./ask2 testfiles/glid1.txt 1000 result1.txt [0m
+RUN 4 Real time : 9.88 seconds
+[0;31mrunning ./ask2 testfiles/glid1.txt 1000 result1.txt [0m
+RUN 5 Real time : 9.93 seconds
+[0;32mAverage time of testfiles/glid1.txt with 1000 generations and 3 threads: 9.83 seconds [0m
+
+
+[0;33mstating test of grid2.txt [0m
+
+[0;34mstarting test of grid2.txt with 100 generations [0m
+[0;31mrunning ./ask2 testfiles/glid2.txt 100 result2.txt [0m
+RUN 1 Real time : 105.85 seconds
+[0;31mrunning ./ask2 testfiles/glid2.txt 100 result2.txt [0m
+RUN 2 Real time : 105.77 seconds
+[0;31mrunning ./ask2 testfiles/glid2.txt 100 result2.txt [0m
+RUN 3 Real time : 106.23 seconds
+[0;31mrunning ./ask2 testfiles/glid2.txt 100 result2.txt [0m
+RUN 4 Real time : 105.80 seconds
+[0;31mrunning ./ask2 testfiles/glid2.txt 100 result2.txt [0m
+RUN 5 Real time : 106.08 seconds
+[0;32mAverage time of testfiles/glid2.txt with 100 generations and 3 threads: 105.94 seconds [0m
+
+[0;34mstarting test of grid2.txt with 1000 generations [0m
+[0;31mrunning ./ask2 testfiles/glid2.txt 1000 result2.txt [0m
+RUN 1 Real time : 987.95 seconds
+[0;31mrunning ./ask2 testfiles/glid2.txt 1000 result2.txt [0m
+RUN 2 Real time : 980.79 seconds
+[0;31mrunning ./ask2 testfiles/glid2.txt 1000 result2.txt [0m
+RUN 3 Real time : 986.56 seconds
+[0;31mrunning ./ask2 testfiles/glid2.txt 1000 result2.txt [0m
+RUN 4 Real time : 987.22 seconds
+[0;31mrunning ./ask2 testfiles/glid2.txt 1000 result2.txt [0m
+RUN 5 Real time : 981.71 seconds
+[0;32mAverage time of testfiles/glid2.txt with 1000 generations and 3 threads: 984.84 seconds [0m
+
+
+
+[0;35mstarting test with 4 threads [0m
+
+
+[0;33mstating test of grid1.txt [0m
+
+[0;34mstarting test of grid1.txt with 100 generations [0m
+[0;31mrunning ./ask2 testfiles/glid1.txt 100 result1.txt [0m
+RUN 1 Real time : 0.84 seconds
+[0;31mrunning ./ask2 testfiles/glid1.txt 100 result1.txt [0m
+RUN 2 Real time : 0.85 seconds
+[0;31mrunning ./ask2 testfiles/glid1.txt 100 result1.txt [0m
+RUN 3 Real time : 0.84 seconds
+[0;31mrunning ./ask2 testfiles/glid1.txt 100 result1.txt [0m
+RUN 4 Real time : 0.90 seconds
+[0;31mrunning ./ask2 testfiles/glid1.txt 100 result1.txt [0m
+RUN 5 Real time : 0.85 seconds
+[0;32mAverage time of testfiles/glid1.txt with 100 generations and 4 threads: .85 seconds [0m
+
+[0;34mstarting test of grid1.txt with 1000 generations [0m
+[0;31mrunning ./ask2 testfiles/glid1.txt 1000 result1.txt [0m
+RUN 1 Real time : 7.55 seconds
+[0;31mrunning ./ask2 testfiles/glid1.txt 1000 result1.txt [0m
+RUN 2 Real time : 7.49 seconds
+[0;31mrunning ./ask2 testfiles/glid1.txt 1000 result1.txt [0m
+RUN 3 Real time : 7.63 seconds
+[0;31mrunning ./ask2 testfiles/glid1.txt 1000 result1.txt [0m
+RUN 4 Real time : 7.47 seconds
+[0;31mrunning ./ask2 testfiles/glid1.txt 1000 result1.txt [0m
+RUN 5 Real time : 7.54 seconds
+[0;32mAverage time of testfiles/glid1.txt with 1000 generations and 4 threads: 7.53 seconds [0m
+
+
+[0;33mstating test of grid2.txt [0m
+
+[0;34mstarting test of grid2.txt with 100 generations [0m
+[0;31mrunning ./ask2 testfiles/glid2.txt 100 result2.txt [0m
+RUN 1 Real time : 82.37 seconds
+[0;31mrunning ./ask2 testfiles/glid2.txt 100 result2.txt [0m
+RUN 2 Real time : 82.12 seconds
+[0;31mrunning ./ask2 testfiles/glid2.txt 100 result2.txt [0m
+RUN 3 Real time : 82.22 seconds
+[0;31mrunning ./ask2 testfiles/glid2.txt 100 result2.txt [0m
+RUN 4 Real time : 83.14 seconds
+[0;31mrunning ./ask2 testfiles/glid2.txt 100 result2.txt [0m
+RUN 5 Real time : 82.82 seconds
+[0;32mAverage time of testfiles/glid2.txt with 100 generations and 4 threads: 82.53 seconds [0m
+
+[0;34mstarting test of grid2.txt with 1000 generations [0m
+[0;31mrunning ./ask2 testfiles/glid2.txt 1000 result2.txt [0m
+RUN 1 Real time : 747.58 seconds
+[0;31mrunning ./ask2 testfiles/glid2.txt 1000 result2.txt [0m
+RUN 2 Real time : 747.30 seconds
+[0;31mrunning ./ask2 testfiles/glid2.txt 1000 result2.txt [0m
+RUN 3 Real time : 751.27 seconds
+[0;31mrunning ./ask2 testfiles/glid2.txt 1000 result2.txt [0m
+RUN 4 Real time : 747.76 seconds
+[0;31mrunning ./ask2 testfiles/glid2.txt 1000 result2.txt [0m
+RUN 5 Real time : 748.15 seconds
+[0;32mAverage time of testfiles/glid2.txt with 1000 generations and 4 threads: 748.41 seconds [0m
+
+speed ups compaired to one thread
+
+2 threads
+	
+	glid1
+		100 generations : 190.19%
+		1000 generations: 197.91%
+	
+	grlid2
+		100 generations : 192.17%
+		1000 generations: 196.30%
+
+3 threads
+	
+	glid1
+		100 generations : 266.97%
+		1000 generations: 289.31%
+	
+	grlid2
+		100 generations : 277.09%
+		1000 generations: 290.11%
+
+
+4 threads
+	
+	glid1
+		100 generations : 342.35%
+		1000 generations: 377.68%
+	
+	grlid2
+		100 generations : 355.68%
+		1000 generations: 381.77%
+
+
+in theiry the serial runs (the ones compilied without linking the openmp lib) should run slower than the paraller version with one thread that's because we pay the 
+overhead of creating threads without getting any advandage as we have no paraller excecution. But in this excample the concarent progamm with 1 thread is equal and the sclitiest bit
+faster than the serial from my reserch it seems that the omp is smart enough to se the envirioment veriable of the threads it is allowed to create and it desides that the overhead is not worth it
+so it skeeps it
+
+the move form 100 to 1000 have quite the big defference but the defference between the glid1 and glid2 seems to be way biger with makes sence as the generations are 10x but the glid is 10x in 2d.
+
+in the serial progam the times as the generations number and the glid get biger seams to increace at a faster rate  
